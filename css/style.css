@@ -1,0 +1,472 @@
+/* font-family: 'Lato', sans-serif; */
+* {
+   margin: 0%;
+   padding: 0%;
+}
+
+body {
+   font-family: 'Lato', sans-serif;
+}
+
+header {
+   background: #f6f9f9;
+   padding: 20px 0;
+}
+
+.header_wrapper {
+   width: 80%;
+   margin: 0 auto;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+
+.logo {}
+
+.logo img {}
+
+nav {}
+
+nav ul {
+   list-style: none;
+   display: flex;
+}
+
+nav ul li {}
+
+nav ul li a {
+   text-transform: uppercase;
+   text-decoration: none;
+   margin-left: 25px;
+   color: #2d3950;
+}
+
+.banner {
+   background-image: url(../images/bgt.png);
+   min-height: 88vh;
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   position: relative;
+}
+
+.banner_contain {
+   text-align: center;
+}
+
+.banner_contain h1 {
+   color: #ffffff;
+   font-size: 70px;
+}
+
+.banner_contain span {
+   display: block;
+   height: 2px;
+   width: 100%;
+   background: #15a4fa;
+   margin: 22px 0;
+}
+
+.banner_contain p {
+
+   color: #fff;
+   margin-bottom: 79px;
+}
+
+.banner_contain button {
+   cursor: pointer;
+   background: transparent;
+   color: #fff;
+   border: none;
+   border: 1px solid #15a4fa;
+   padding: 11px 15px;
+   font-size: 17px;
+   border-radius: 4px;
+   transition: .4s all ease-in-out;
+
+}
+
+.banner_contain button:hover {
+   background-color: #15a4fa;
+
+}
+
+.icon {
+
+   position: absolute;
+   left: 50%;
+   transform: translate(-50%);
+   bottom: 10%;
+   color: #fff;
+   animation: updown 1s linear infinite;
+   animation-direction: alternate;
+}
+
+@keyframes updown {
+   0% {
+      bottom: 10%;
+   }
+
+   100% {
+      bottom: 13%;
+   }
+}
+
+.simple_section {
+   background-color: #f6f9f9;
+   padding: 50px 0;
+   text-align: center;
+}
+
+.content_wrapper {
+   width: 80%;
+   margin: auto;
+
+}
+
+.simple_section h1 {
+   color: #2d3950;
+   font-size: 20px;
+
+   margin-bottom: 19px;
+}
+
+.simple_section p {
+   color: #999999;
+   font-size: 12px;
+   line-height: 19px;
+}
+
+.features {
+   display: flex;
+   justify-content: space-between;
+   margin-bottom: 32px;
+}
+
+.features_item {
+
+   width: 30%;
+   text-align: center;
+}
+
+.features_item h3 {
+
+   color: #2d3950;
+   margin-bottom: 12px;
+}
+
+.features_item p {
+
+   color: #999999;
+}
+
+.features_icon {
+   height: 100px;
+   width: 100px;
+   /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#48baff+0,48baff+50,5fc3ff+50,5fc3ff+100 */
+   background: #48baff;
+   /* Old browsers */
+   background: -moz-linear-gradient(left, #48baff 0%, #48baff 50%, #5fc3ff 50%, #5fc3ff 100%);
+   /* FF3.6-15 */
+   background: -webkit-linear-gradient(left, #48baff 0%, #48baff 50%, #5fc3ff 50%, #5fc3ff 100%);
+   /* Chrome10-25,Safari5.1-6 */
+   background: linear-gradient(to right, #48baff 0%, #48baff 50%, #5fc3ff 50%, #5fc3ff 100%);
+   /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#48baff', endColorstr='#5fc3ff', GradientType=1);
+   /* IE6-9 */
+
+
+   font-size: 30px;
+   text-align: center;
+   line-height: 100px;
+   margin: auto;
+   margin-bottom: 23px;
+   margin-top: 32px;
+   color: #ffffff;
+}
+
+.showcase_section {
+
+   background: #f6f9f9;
+   padding: 67px 0;
+}
+
+.showcasw_header {
+
+   text-align: center;
+}
+
+.showcasw_header h1 {
+
+   color: #2d3950;
+   font-size: 44px;
+   font-weight: 400;
+   padding: 18px 0;
+}
+
+.showcasw_header p {
+
+   color: #909090;
+}
+
+.showcase_item {
+   margin: 30px 0;
+   display: flex;
+   justify-content: space-between;
+   flex-wrap: wrap;
+}
+
+.items {
+   width: 30%;
+   position: relative;
+   overflow: hidden;
+   margin-bottom: 30px;
+}
+
+.items img {
+
+   width: 100%;
+}
+
+.items::after {
+   content: '';
+   position: absolute;
+   left: 0%;
+   top: 0%;
+   height: 100%;
+   width: 0%;
+   background-color: #15a4fa;
+   transition: .6s all ease-in-out;
+   opacity: .5;
+
+}
+
+.items::before {
+   content: '';
+   position: absolute;
+   right: 0%;
+   top: 0%;
+   height: 100%;
+   width: 0%;
+   background-color: #15a4fa;
+   transition: .6s all ease-in-out;
+   opacity: .5;
+}
+
+.items:hover::after {
+   width: 50%;
+
+
+}
+
+.items:hover::before {
+   width: 50%;
+
+}
+
+.social_icon {
+
+   position: absolute;
+   left: 50%;
+   top: 45%;
+   transform: translate(-50%, -50%);
+   z-index: 9999;
+   opacity: 0;
+   transition: .4s all ease-in-out;
+}
+
+.social_icon ul {
+
+   width: 100px;
+   margin: 0;
+   padding: 0;
+   list-style: none;
+   display: flex;
+   justify-content: space-evenly;
+}
+
+.social_icon ul li {
+
+   height: 30px;
+   width: 30px;
+   border: 1px solid #fff;
+   text-align: center;
+   line-height: 30px;
+   border-radius: 4px;
+}
+
+.social_icon ul li a {
+
+   color: #fff;
+}
+
+.items:hover .social_icon {
+   opacity: 1;
+   top: 50%;
+}
+
+.contact_us {
+   background-image: url(../images/bt.png);
+   background-position: center;
+   background-size: cover;
+   background-repeat: no-repeat;
+   padding: 50px;
+   position: relative;
+   z-index: 0;
+}
+.contact_us::after{
+   content: '';
+   position: absolute;
+   left: 0 ;
+   top: 0%;
+   height: 100%;
+   width: 100%;
+   background-color: #2d3950;
+   opacity: .8;
+   z-index: -1;
+}
+
+.contact {
+
+   width: 50%;
+   margin: auto;
+   text-align: center;
+}
+
+.contact h1 {
+
+   color: #fff;
+   font-size: 35px;
+}
+
+.contact p {
+
+   color: #c5c2c2;
+   margin-top: 15px;
+   margin-bottom: 50px;
+}
+
+form {
+   text-align: end;
+}
+
+form input {
+
+   width: 100%;
+   background: transparent;
+   border: none;
+   border: 1px solid #999999;
+   margin: 10px 0;
+   padding: 7px 5px;
+   border-radius: 5px;
+}
+
+form textarea {
+
+   width: 100%;
+   background: transparent;
+   border: none;
+   border: 1px solid #999999;
+   border-radius: 5px;
+   padding: 5px 5px;
+}
+
+.submit {
+
+   color: #fff;
+   width: auto;
+   padding: 10px 31px;
+   border-color: #48baff;
+}
+
+.submit:hover {
+   background-color: #48baff;
+   transition: .4s all ease-in-out;
+}
+
+footer {
+
+   width: 80%;
+   margin: auto;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   padding: 30px 0;
+}
+
+.copyright {
+
+   width: 20%;
+}
+
+.copyright p {}
+
+.footer_icon {
+
+   width: 12%;
+}
+
+.footer_icon ul {
+
+   list-style: none;
+   display: flex;
+   justify-content: space-between;
+}
+
+.footer_icon ul li {
+
+   height: 30px;
+   width: 30px;
+   background: #15a4fa;
+   text-align: center;
+   color: #fff;
+   line-height: 30px;
+}
+
+.form_footer{
+   display: flex;
+   justify-content: space-between;
+   justify-items: center;
+   color: #fff;
+}
+.form_footer input{
+   width: auto; 
+}
+.cheek{
+   display: flex;
+   align-items: center;
+}
+.cheek label{
+   color: #fff;
+   margin-left: 5px;
+}
+.cheek input{
+   cursor: pointer;
+   display: block;
+}
+.cheek input[type="checkbox"]{
+   appearance: none;
+   height: 15px;
+   width: 15px;
+   background: #99a0a9;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+.cheek input[type="checkbox"]::before{
+   font-family: "Font Awesome 5 free";
+   content: "\f00c";
+   font-weight: 900;
+   font-size: 14px;
+   color: #fff;
+   display: none;
+}
+.cheek input[type="checkbox"]:checked{
+   background: #005CC8;
+}
+.cheek input[type="checkbox"]:checked::before{
+   display: block;
+}
